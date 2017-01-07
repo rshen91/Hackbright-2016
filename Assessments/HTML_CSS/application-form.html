@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skills-HTML-CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>
+        Application Form
+    </h1>
+    <p>
+        Please complete the following sections in order to be considered. Thank you. 
+    </p>
+        <div>
+            <form action="/application" method="POST">
+            <label for="firstname">First Name: <input type="text" name="firstname"></label>
+            <label for="lastname" id="lastname"><b>Last Name: </b>
+                <!-- Is this what the instructions meant with making the last name field bold? -->
+                <input type="text" name="lastname"></label>
+            <br>
+            <br>
+            Please provide your salary requirement: <input type="text" name="salary">
+            <br>
+            <br>
+            <fieldset>
+                <legend>Which job are you applying for (select below):</legend>
+                <input type="radio" name="Software Engineer" value="job"><label for="Software Engineer">Software Engineer</label>
+                <br>
+                <input type="radio" name="QA Engineer" value="job"><label for="QA Engineer">QA Engineer</label>
+                <br>
+                <input type="radio" name="Product Manager" value="job"><label for="Product Manager">Product Manager</label>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
